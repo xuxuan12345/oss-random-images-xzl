@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/randomImages",
+      "dest": "/api/randomImages.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/health",
+      "dest": "/api/healthcheck.js"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/api/randomImages.js"
+    }
+  ]
+}
